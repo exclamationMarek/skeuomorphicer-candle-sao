@@ -3,12 +3,12 @@
 A more skeuomorphic, electronic candle, that you turn on using a flame and turn off by blowing on it. This is a SAO version of my standalone skeuomorphicer candle.
 * It's like a real candle!
 * Uses like 5 components
-* No MCUs, no op-amps, not even an IC
+* No MCUs, no op-amps, literarily just one transistor
 * The (simplified) schematic looks like a candle
 
 # Simplified schematic and principle of operation
 
-put schematic here
+![](images/schematic_simplified.png)
 
 * Heat from flame causes NTC resistance to drop
 * This increases the voltage on the gate of the N-MOS, so it should start conducting
@@ -30,25 +30,19 @@ If you received a kit at Hackaday Europe 2026, it should contain:
 
 1x PCB
 1x tiny tungsten bulb (3V nominal)
-1x N-MOS of some kind
-1x 100k resistor in 0603
-1x 4.7R resistor
-1x  27k resistor
+1x N-MOSFET 2302V in SOT-23
+1x 100k NTC thermistor in 0603 (no marking)
+1x 4.7R resistor (marked "4R7")
+1x 100R resistor (marked "101")
+1x  27k resistor (marked "273")
 1x SAO connector
 
 
-### OPTIONS:
-maybe i can offer 2x10R or 2x12R? This way:
-* one resistor makes it nice and dim
-* two in parallel (one atop another) makes it standard bright
-* two in series makes it extra dim (and challanging to solder!)
-* At least that resistor is easy to distinguish
-
 I might have accidentally removed the solder mask on the "wick" part of the candle. It makes soldering the NTC and supplementary heating resistor very hard, as it is very easy to short them to the large 3v3 plane. Sorry! Solder them first, so that you can use a multimeter to test for shorts without other parts interfering.
 
-put assembly image here
+![](images/assembly.png)
 
-You can optionally place an LED in the back (or on the top of the wick(, and its current limiting resistor next to the 4.7R one, if you want your candle to have semiconductor driven light.
+You can optionally place an LED in the back (or on the top of) the wick, and its current limiting resistor next to the 4.7R one.
 
 # Operational requirements:
 Ambient temperature 22.9-23.1 degrees
