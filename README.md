@@ -45,8 +45,12 @@ I might have accidentally removed the solder mask on the "wick" part of the cand
 You can optionally place an LED in the back (or on the top of) the wick, and its current limiting resistor next to the 4.7R one.
 
 # Operational requirements:
-Ambient temperature 22.9-23.1 degrees
-Vin: 3.25-3.35V
-Windspeed: 0-0.5m/s
-Outside of these parameters, the candle will probably turn itself on or off unprompted 
+* Ambient temperature 22.9-23.1 degrees
+* Vin: 3.25-3.35V
+* Windspeed: 0-0.5m/s
+* Outside of these parameters, the candle will probably turn itself on or off unprompted
+
+<img width="1920" height="1797" alt="IMG_1984" src="https://github.com/user-attachments/assets/46f20057-15fa-41f5-93c1-b45be7661a3d" />
+First premiered at Hackaday Europe 2026 in Lecco
+
 
